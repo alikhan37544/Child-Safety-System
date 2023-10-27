@@ -75,7 +75,7 @@ elif option=='A chat based warning system':
         x=random.choice(m['0'])
         #txt=preproc(inp)
         st.write('SAF: ',x)
-        model=tf.keras.models.load_model('data\lstm_glove_model.h5')
+        model=tf.keras.models.load_model('/home/akz/Programming/Child-Safety-System/code/data/lstm_glove_model.h5')
         tok=tokenizer.texts_to_sequences(x)
         pad=pad_sequences(tok,maxlen=70)
         pad1=preds(inp)
